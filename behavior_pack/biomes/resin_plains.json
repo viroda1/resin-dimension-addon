@@ -1,0 +1,52 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:biome": {
+        "description": {
+            "identifier": "resin:resin_plains"
+        Bedrock Wiki says to use the Biome JSON.
+Here is the corrected plan.
+
+### Phase 1: The Behavior Pack (How it works)
+
+Since you want a full dimension, we need to tell the game three things:
+1.  **How to make the ground:** We will define a biome that uses Resin blocks as the surface.
+2.  **How to generate the world:** We will define a dimension type that uses that biome.
+3.  **How to get there:** We will create a custom portal block (or feature) to teleport you.
+
+#### Step 1: Define the Biome (The "Resin Plains")
+This file tells the game: "When generating this biome, use Resin Blocks for the ground."
+
+File: `behavior_pack/biomes/resin_plains.json`
+```json
+{
+    "format_version": "1.16.0",
+    "minecraft:biome": {
+        "description": {
+            "identifier": "resin:resin_plains"
+        },
+        "components": {
+            "minecraft:climate": {
+                "temperature": 0.5,
+                "downfall": 0.5,
+                "ash": 0,
+                "red_spores": 0,
+                "white_ash": 0
+            },
+            "minecraft:overworld_height": {
+                "noise_type": "default"
+            },
+            "minecraft:surface_parameters": {
+                "sea_floor_depth": 7,
+                "sea_floor_material": "minecraft:gravel",
+                "foundation_material": "minecraft:deepslate",
+                "mid_material": "minecraft:resin_bricks",
+                "top_material": "minecraft:resin_block"
+            },
+            "minecraft:overworld_generation_rules": {
+                "generate_for_climates": [
+                    ["medium", 1]
+                }
+            }
+        }
+    }
+}

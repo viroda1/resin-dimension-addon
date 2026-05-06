@@ -1,0 +1,28 @@
+{
+    "format_version": "1.17.0",
+    "custom": false,
+    "minecraft:dimension": {
+        "description": {
+            "identifier": "resin:the_resin_dimension"
+        /},
+        "components": [
+            {
+                "minecraft:dimension_generation": {
+                    "type": "minecraft:overworld"
+                }
+            },
+            {
+                "background_palette": [
+                    {
+                        "block": {
+                            "name": "minecraft:air"
+                        },
+                        "variation_count": 1
+                    }
+                ]
+            }
+        ]
+    }
+}
+    }
+}

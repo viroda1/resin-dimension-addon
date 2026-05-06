@@ -1,0 +1,17 @@
+{
+    "format_version": 2,
+    "header": {
+        "name": "Resin Dimension Addon",
+        "description": "The Resin Civilization made with Resin blocks, Birch wood, and Copper chains.",
+        "uuid": "93b1ced9-6345-43a2-aedb-b5f477e0009a",
+        "version": [1, 0, 0],
+        "min_engine_version": [1, 20, 0]
+    },
+    "modules": [
+        {
+            "type": "data",
+            "uuid": "1e8f570a-127f-4257-80d6-440d1df221e2",
+            "version": [1, 0, 0]
+        }
+    ]
+}

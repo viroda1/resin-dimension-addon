@@ -1,0 +1,17 @@
+{
+    "format_version": 2,
+    "header": {
+        "name": "Resin Dimension Resource Pack",
+        "description": "Textures and language for the Resin Civilization.",
+        "uuid": "65a56829-e84b-41b7-926d-a4137ff21dc8",
+        "version": [1, 0, 0],
+        "min_engine_version": [1, 20, 0]
+    },
+    "modules": [
+        {
+            "type": "resources",
+            "uuid": "6c0e1361-a44e-4dc1-99d0-90eecb37e266",
+            "version": [1, 0, 0]
+        }
+    ]
+}
